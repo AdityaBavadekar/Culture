@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="15dp"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:paddingHorizontal="10dp"
+                android:paddingTop="10dp"
+                android:text="Change Theme"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="?android:textColorPrimary" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/themeRadioGroup"
+                android:checkedButton="@id/toggleSystemDefault"
+                android:padding="5dp">
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/toggleDarkTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" Dark Theme"
+                    app:buttonTint="?android:textColorPrimary"
+                    android:textSize="17sp" />
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/toggleLightTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" Light Theme"
+                    app:buttonTint="?android:textColorPrimary"
+                    android:textSize="17sp" />
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/toggleSystemDefault"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" System Default"
+                    app:buttonTint="?android:textColorPrimary"
+
+                    android:textSize="17sp" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autoLink="web"
+        android:fontFamily="@font/roboto"
+        android:linksClickable="true"
+        android:padding="30dp"
+        android:textColor="?android:textColorPrimary"
+        tools:text="1. Dark Theme is more prefered when the visible light is less or surroundings are dark\n\n2. Light Theme is more preferred when surroundings are light.\n\n3. System Default would mean the theme you have configured in setting of your device. \n\nTip :You can change system theme from Notification Panel or from Devices Settings \n(For details visit : https://support.google.com/accessibility/android/answer/61518000?hl=en )" />
+
+</LinearLayout>

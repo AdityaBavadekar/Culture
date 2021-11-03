@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#EDE7F6</color>
+    <color name="colorPrimaryDark">#EDE7F6</color>
+    <color name="DcolorPrimary">#000000</color>
+    <color name="DcolorPrimaryDark">#000000</color>
+    <color name="colorAccent">#0340DA</color>
+
+    <color name="CYCAN">#FF00FFFF</color>
+    <color name="BLUE">#FF0000FF</color>
+    <color name="RED">#FFFF0000</color>
+    <color name="YELLOW">#FFFFFF00</color>
+</resources>
