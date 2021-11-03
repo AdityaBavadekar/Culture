@@ -1,12 +1,13 @@
 class Converter { 
 
 @TypeConverter 
-fun fromColor(priority: Priority): String { 
- return .name
+ fun fromColor(cultureColours : CultureColours) : String { 
+  return cultureColours.name
  } 
 
-@TypeConverter fun toColor(priority: String): CultureColors {
- return Priority.valueOf(priority) 
+@TypeConverter 
+ fun toColor(colour: String): CultureColors {
+  return CultureColours.valueOf(colour) 
  } 
 
 }
